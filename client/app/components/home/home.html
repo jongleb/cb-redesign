@@ -1,9 +1,128 @@
-<navbar></navbar>
-<header>
-  <hero></hero>
-</header>
-<main>
-  <div>
-    <h1>Found in {{ $ctrl.name }}.html</h1>
+<div>
+  <h4>Home</h4>
+</div>
+<div class="row">
+  <div class="col-sm-8">
+    <home-item
+      title="'Manage Partners'"
+      text="'View details about the files you exchange with your partners.
+      The total number of files, the number of successfully
+      processed files, failed attempts, and the files in process
+      are displayed here. To track your file, enter a file name
+      or a Correlation ID.'"
+      image="'https://collablynk.com/app/icons/home/managerfiles.png'">
+      <count-group></count-group>
+      <div class="row" style="max-width: 450px;">
+        <div class="col-md-3">
+          <span>Want to track a file?</span>-
+        </div>
+        <div class="col-md-9">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+                                <button class="btn btn-secondary"
+                                        type="button">Go!</button>
+                            </span>
+          </div>
+        </div>
+      </div>
+    </home-item>
+    <div class="item">
+      <img class="float-left"
+           src="https://collablynk.com/app/icons/home/manageragreements.png">
+      <div class="item-body">
+        <h5>Manage Files</h5>
+        <p>View details about your partners
+          and establish new partnerships.
+          To invite a new partner,
+          click Invite a Partner</p>
+        <div class="row count-group">
+          <div class="col-md-3 count-item">
+            <span>0</span>
+            <p>total</p>
+          </div>
+          <div class="col-md-3 count-item">
+            <span>0</span>
+            <p>total</p>
+          </div>
+          <div class="col-md-3 count-item">
+            <span>0</span>
+            <p>total</p>
+          </div>
+          <div class="col-md-3 count-item">
+            <span>0</span>
+            <p>total</p>
+          </div>
+        </div>
+        <button class="btn">Invite</button>
+      </div>
+    </div>
+    <div class="item">
+      <img class="float-left"
+           src="https://collablynk.com/app/icons/home/manageraccount.png">
+      <div class="item-body">
+        <h5>Manage My Account <span class="badge badge-warning">Warning</span></h5>
+        <p>View details about your partners
+          and establish new partnerships.
+          To invite a new partner,
+          click Invite a Partner</p>
+        <button class="btn">Invite</button>
+      </div>
+    </div>
+    <div class="item">
+      <img class="float-left"
+           src="https://collablynk.com/app/icons/home/manageragents.png">
+      <div class="item-body">
+        <h5>Manage Agents</h5>
+        <p>Download and manage your agents.
+          Agents allow delivering files
+          from the source system to the cloud.
+          You can also create a list of IPs
+          that can be used by your agents.
+        </p>
+        <div class="btn-group">
+          <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Small button
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img class="float-left"
+           src="https://collablynk.com/app/icons/home/notifications.png">
+      <div class="item-body">
+        <h5>Manage Notifications</h5>
+        <p>Specify your notification
+          preferences and the way your
+          system informs you on your account events.
+        </p>
+      </div>
+    </div>
+    <div class="item">
+      <img class="float-left"
+           src="https://collablynk.com/app/icons/home/audit.png">
+      <div class="item-body">
+        <h5>Audit</h5>
+        <p>View the audit history
+          and general information
+          on the type, time, and the
+          date of an event.
+        </p>
+      </div>
+    </div>
   </div>
-</main>
+  <div class="col-sm-4">
+    <h5>Recent activities</h5>
+    <div>
+      <span class="badge badge-pill badge-default">Default</span>
+      <span class="badge badge-pill badge-primary">Primary</span>
+    </div>
+  </div>
+</div>
